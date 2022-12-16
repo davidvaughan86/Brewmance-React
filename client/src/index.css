@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fredoka One", cursive;
+}
+
+code {
+  font-family: "Fredoka One", cursive;
+}
+
+a {
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+  -webkit-text-stroke: 1px rgb(196, 159, 120);
+  font-size: 20px;
+  color: black;
+  height: 5%;
+}

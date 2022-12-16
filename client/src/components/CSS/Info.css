@@ -1,0 +1,138 @@
+@media all and (max-width: 715px) {
+  /* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+  #map {
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin: 5%;
+  }
+
+  #map img {
+    width: 60px;
+    height: 60px;
+  }
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+
+  .info-style {
+    background-image: url("./images/coffeegirl2.jpeg") !important;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(215, 202, 186);
+    color: black;
+    font-family: "Fredoka One", cursive;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px rgb(196, 159, 120);
+    font-size: 15px;
+    height: 150vh;
+    text-align: center;
+  }
+
+  .locateContainer {
+    height: 100%;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+  }
+
+  .info-style a {
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 20px;
+    color: rgb(85, 52, 6);
+  }
+  .info-style a:hover {
+    font-size: 35px;
+  }
+
+  .info-style h4 {
+    font-size: 20px;
+    color: rgb(72, 35, 10);
+  }
+  #not-too-large {
+    display: contents;
+  }
+  #too-large {
+    display: none;
+  }
+}
+
+@media all and (min-width: 715px) {
+  #map {
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 20%;
+    margin: 5%;
+  }
+
+  #map img {
+    width: 60px;
+    height: 60px;
+  }
+  /* 
+       * Optional: Makes the sample page fill the window. 
+       */
+  .info-style {
+    background-image: url("./images//coffeegirl.jpeg") !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(215, 202, 186);
+    color: black;
+    font-family: "Fredoka One", cursive;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px rgb(196, 159, 120);
+    font-size: 25px;
+    height: 150vh;
+    text-align: center;
+  }
+
+  .locateContainer {
+    height: 100%;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+  }
+
+  .info-style a {
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-size: 20px;
+    color: rgb(85, 52, 6);
+  }
+  .info-style a:hover {
+    font-size: 35px;
+  }
+
+  .info-style h4 {
+    font-size: 20px;
+    color: rgb(72, 35, 10);
+  }
+  #not-too-large {
+    display: contents;
+  }
+  #too-large {
+    display: none;
+  }
+}

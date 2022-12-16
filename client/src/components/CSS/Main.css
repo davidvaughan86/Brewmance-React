@@ -1,0 +1,120 @@
+.main-style {
+  background-image: url("./images/coffeguy.jpeg"),
+    url("./images/coffee-grounds.jpg");
+  background-size: contain;
+  background-repeat: no-repeat, repeat;
+  background-color: rgb(215, 202, 186);
+  color: black;
+  font-family: "Fredoka One", cursive;
+  height: 150vh;
+}
+
+.main-style h1 {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+  -webkit-text-stroke: 1px rgb(249, 240, 192);
+  text-align: center;
+}
+.main-style h3 {
+  -webkit-background-clip: text;
+
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+  -webkit-text-stroke: 1px rgb(196, 159, 120);
+  margin-top: 30%;
+}
+.main-style a {
+  -webkit-background-clip: text;
+
+  text-decoration: none;
+  -moz-background-clip: text;
+  -moz-text-decoration-color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-size: 20px;
+  color: rgb(85, 52, 6);
+}
+.main-style a:hover {
+  font-size: 35px;
+}
+
+.about h3 {
+  text-align: center;
+  padding: 5%;
+  margin: 3%;
+}
+
+@media all and (min-width: 490px) {
+  .main-style {
+    background-image: url("./images/coffeguy.jpeg"),
+      url("./images/coffee-grounds.jpg");
+    background-size: center;
+    background-repeat: no-repeat, repeat;
+    color: black;
+    font-family: "Fredoka One", cursive;
+    background-color: black;
+    text-align: center;
+  }
+
+  .main-style h1 {
+    -webkit-background-clip: text;
+    font-size: 40px;
+
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px rgb(249, 240, 192);
+  }
+  .main-style h3 {
+    -webkit-background-clip: text;
+    font-size: 25px;
+
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px rgb(196, 159, 120);
+  }
+
+  .about h3 {
+    text-align: center;
+    padding: 5%;
+    margin: 3%;
+    margin-top: 15%;
+  }
+}
+
+@media all and (min-width: 830px) {
+  .main-style {
+    background-image: url("./images/coffeguy.jpeg"),
+      url("./images/coffee-grounds.jpg");
+    background-size: stretch;
+    background-position: top;
+    background-repeat: no-repeat, repeat;
+    color: black;
+    font-family: "Fredoka One", cursive;
+    background-color: black;
+    text-align: center;
+  }
+
+  .main-style h1 {
+    -webkit-background-clip: text;
+    font-size: 50px;
+
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px rgb(249, 240, 192);
+  }
+  .main-style h3 {
+    -webkit-background-clip: text;
+    font-size: 25px;
+
+    -moz-background-clip: text;
+    -moz-text-decoration-color: transparent;
+    -webkit-text-stroke: 1px rgb(196, 159, 120);
+  }
+
+  .about h3 {
+    text-align: center;
+    padding: 5%;
+    margin: 3%;
+    margin-top: 15%;
+  }
+}

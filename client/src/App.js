@@ -13,14 +13,14 @@ import "./components/CSS/Info.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
-  // const [backendData, setBackendData] = useState([{}]);
-  // useEffect(() => {
-  //   fetch("/")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       setBackendData(data);
-  //     });
-  // }, []);
+  const [backendData, setBackendData] = useState([{}]);
+  useEffect(() => {
+    fetch("/recipe")
+      .then((response) => response.json())
+      .then((data) => {
+        setBackendData(data);
+      });
+  }, []);
   return (
     <div>
       <Router>
@@ -28,7 +28,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Hero />} />
           <Route path="/main" element={<Main />} />
-          <Route path="/recipes" element={<Recipe />} />
+          <Route path="/recipe" data={data} element={<Recipe />} />
           <Route path="/info" element={<Info />} />
         </Routes>
       </Router>

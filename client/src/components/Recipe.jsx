@@ -1,9 +1,9 @@
 import Buttons from "./Buttons";
 
-const Recipe = () => {
+const Recipe = (props) => {
   return (
     <div className="recipe-style">
-      <Buttons />
+      <Buttons data={props} />
     </div>
   );
 };

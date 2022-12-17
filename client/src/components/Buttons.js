@@ -2,30 +2,21 @@ import React from "react";
 import { ReactComponent as Logo } from "./CSS/images/coffee.svg";
 import { useEffect, useState } from "react";
 
-const Buttons = () => {
+const Buttons = (props) => {
   document.getElementById("btns").style.display = "flex";
-
-  const [backendData, setBackendData] = useState([{}]);
-  useEffect(() => {
-    fetch("/")
-      .then((response) => response.json())
-      .then((data) => {
-        setBackendData(data);
-      });
-  }, []);
-  const recipePic = data.map((data) => {
-    return data.image;
+  const recipePic = data.map((props) => {
+    return props.image;
   });
 
-  const recipeTitle = data.map((data) => {
-    return data.title;
+  const recipeTitle = data.map((props) => {
+    return props.title;
   });
 
-  const recipeInfo = data.map((data) => {
+  const recipeInfo = data.map((props) => {
     return (
-      data.missedIngredients[0].original +
+      props.missedIngredients[0].original +
       ", also" +
-      data.usedIngredients[0].original
+      props.usedIngredients[0].original
     );
   });
   recipePic.forEach((recipePic) => {

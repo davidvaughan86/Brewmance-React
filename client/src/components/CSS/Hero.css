@@ -35,3 +35,7 @@
   border: 5px solid rgb(250, 250, 249);
   box-shadow: 2px 2px black;
 }
+
+.navBar {
+  display: hidden;
+}

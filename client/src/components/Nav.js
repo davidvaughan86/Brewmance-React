@@ -5,6 +5,7 @@ const Nav = () => {
     <div>
       <div>
         <nav
+          className="`navBar"
           style={{
             flexDirection: "row",
             display: "flex",

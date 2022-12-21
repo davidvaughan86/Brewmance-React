@@ -1,16 +1,16 @@
 import React from "react";
 
-const Recipes = () => {
+const Recipe = () => {
   return (
     <div>
-      <div class="recipeWindow">
+      <div className="recipeWindow">
         <h3 id="adjectives"></h3>
 
         <div id="recipePic"></div>
         <br />
         <br />
 
-        <div class="recipeInfoWindow">
+        <div className="recipeInfoWindow">
           <div id="recipeTitle"></div>
           <br />
 
@@ -23,4 +23,4 @@ const Recipes = () => {
   );
 };
 
-export default Recipes;
+export default Recipe;

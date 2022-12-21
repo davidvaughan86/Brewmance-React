@@ -2,8 +2,22 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const PORT = 7777;
+const cors = require("cors");
 
-app.get("/recipe", (req, res) => {
+const whitelist = ["http://localhost:3000"];
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || whitelist.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+};
+app.use(cors(corsOptions));
+
+app.get("/", (req, res) => {
   async function getRecipe() {
     // document.getElementById("getRecipe").disabled = true;
     const response = await fetch(
@@ -19,10 +33,13 @@ app.get("/recipe", (req, res) => {
     );
 
     const data = await response.json();
-    return data;
-  }
+    if (typeof window !== "undefined") {
+      localStorage.setItem("data", JSON.stringify(data));
+    } else console.log(data);
 
-  res.json({ data });
+    res.send(data);
+  }
+  getRecipe();
 });
 
 app.listen(PORT, () => {

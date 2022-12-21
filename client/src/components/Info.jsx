@@ -4,8 +4,8 @@ import Map from "./Map";
 const Info = () => {
   return (
     <div className="info-style">
-      <div class="locateContainer">
-        <div class="top">
+      <div className="locateContainer">
+        <div className="top">
           <nav>
             <a href="/main">Main</a>
             <a href="/recipe">Recipe</a>

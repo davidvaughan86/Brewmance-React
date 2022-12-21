@@ -3,8 +3,8 @@ import React from "react";
 const Map = () => {
   return (
     <div>
-      <div class="container">
-        <div class="map-container">
+      <div className="container">
+        <div className="map-container">
           <div id="map"></div>
         </div>
       </div>

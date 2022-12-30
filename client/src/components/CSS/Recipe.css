@@ -53,10 +53,6 @@
 .recipe-style img {
   width: 300px;
 }
-.recipeContainer {
-  display: flex;
-  flex-direction: column;
-}
 
 .recipeWindow {
   height: 200px;
@@ -83,7 +79,8 @@
 }
 
 #btns {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
 #recipeTitle {

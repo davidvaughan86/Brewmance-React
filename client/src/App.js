@@ -13,17 +13,6 @@ import "./components/CSS/Info.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
-  const [recipes, setRecipes] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:7777")
-      .then((data) => data.json())
-      .then((data) => {
-        setRecipes(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
-  console.log(recipes);
   return (
     <div>
       <Router>
@@ -31,13 +20,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Hero />} />
           <Route path="/main" element={<Main />} />
-          <Route
-            path="/recipes"
-            element={<Recipes />}
-            title={recipes.title}
-            pic={recipes.pic}
-            info={recipes.info}
-          />
+          <Route path="/recipes" element={<Recipes />} />
           <Route path="/info" element={<Info />} />
         </Routes>
       </Router>

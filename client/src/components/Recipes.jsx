@@ -40,7 +40,6 @@ const Recipes = () => {
     const img = document.createElement("img");
     img.src = recipePic;
     recipeDisplay.insertBefore(img, recipeDisplay.children[0]);
-    // img.style.display = "none";
   });
 
   recipeTitle.forEach((recipeTitle) => {
@@ -48,7 +47,6 @@ const Recipes = () => {
     const h1 = document.createElement("h1");
     h1.innerHTML = recipeTitle;
     recipeTitleDisplay.insertBefore(h1, recipeTitleDisplay.children[0]);
-    // h1.style.display = "none";
   });
 
   recipeInfo.forEach((recipeInfo) => {
@@ -56,7 +54,6 @@ const Recipes = () => {
     const h5_1 = document.createElement("h2");
     h5_1.innerHTML = recipeInfo;
     recipeInfoDisplay.insertBefore(h5_1, recipeInfoDisplay.children[0]);
-    // h5_1.style.display = "none";
   });
 
   const titles = document.getElementsByTagName("h1");
@@ -68,21 +65,10 @@ const Recipes = () => {
   const recipeTitleDisplay = document.getElementById("recipeTitle");
   const recipeInfoWindow = document.getElementById("recipeInfoWindow");
 
-  // const adjective = document.getElementById("adjectives");
-  // const adjectives = [
-  //   "😍😍😍",
-  //   "🤤🤤🤤",
-  //   "😋😋😋",
-  //   "Stunning",
-  //   "Amazing",
-  //   "Decadent",
-  // ];
-
   let i = 0;
   let o = 0;
   let u = 0;
   function next() {
-    // nextBtn.dangerouslySetInnerHTML = "Cycle Recipes";
     recipeDisplay.style.display = "flex";
     recipeInfoDisplay.style.display = "flex";
     recipeTitleDisplay.style.display = "flex";
@@ -129,7 +115,6 @@ const Recipes = () => {
 
   return (
     <div className="recipe-style">
-      {/* <button onClick={cycle}>Start</button> */}
       <div id="btns">
         <button onClick={next} id="getRecipe">
           <Logo /> BREW

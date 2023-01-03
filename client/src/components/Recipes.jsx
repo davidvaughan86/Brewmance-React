@@ -30,7 +30,7 @@ const Recipes = () => {
   const recipeInfo = recipes.map((recipes) => {
     return (
       recipes.missedIngredients[0].original +
-      ", also" +
+      ", also " +
       recipes.usedIngredients[0].original
     );
   });
@@ -66,6 +66,7 @@ const Recipes = () => {
   const recipeDisplay = document.getElementById("recipePic");
   const recipeInfoDisplay = document.getElementById("recipeInfo");
   const recipeTitleDisplay = document.getElementById("recipeTitle");
+  const recipeInfoWindow = document.getElementById("recipeInfoWindow");
 
   // const adjective = document.getElementById("adjectives");
   // const adjectives = [
@@ -143,6 +144,8 @@ const Recipes = () => {
           })}
         </div>
 
+        <br />
+        <br />
         <br />
         <br />
 

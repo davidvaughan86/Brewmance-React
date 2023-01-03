@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   async function getRecipe() {
     // document.getElementById("getRecipe").disabled = true;
     const response = await fetch(
-      "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=coffee&number=2&ignorePantry=true&ranking=1",
+      "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=coffee&number=15&ignorePantry=true&ranking=1",
       {
         method: "GET",
         headers: {

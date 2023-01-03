@@ -17,7 +17,9 @@
   /* 
    * Optional: Makes the sample page fill the window. 
    */
-
+  ul {
+    margin-top: 50%;
+  }
   .info-style {
     background-image: url("./images/coffeegirl2.jpeg") !important;
     background-position: top;
@@ -26,7 +28,6 @@
     background-color: rgb(215, 202, 186);
     color: black;
     font-family: "Fredoka One", cursive;
-    -webkit-background-clip: text;
     -moz-background-clip: text;
     -moz-text-decoration-color: transparent;
     -webkit-text-stroke: 1px rgb(196, 159, 120);
@@ -86,14 +87,13 @@
        * Optional: Makes the sample page fill the window. 
        */
   .info-style {
-    background-image: url("./images//coffeegirl.jpeg") !important;
+    background-image: url("./images/coffeegirl.jpeg") !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(215, 202, 186);
     color: black;
     font-family: "Fredoka One", cursive;
-    -webkit-background-clip: text;
     -moz-background-clip: text;
     -moz-text-decoration-color: transparent;
     -webkit-text-stroke: 1px rgb(196, 159, 120);
@@ -135,4 +135,8 @@
   #too-large {
     display: none;
   }
+}
+
+ul {
+  margin-top: 50%;
 }

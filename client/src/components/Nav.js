@@ -15,7 +15,7 @@ const Nav = () => {
         >
           <a href="/main">Main</a>
           <a href="/recipes">Recipe</a>
-          <a href="/locate">Info</a>
+          <a href="/info">Info</a>
         </nav>
       </div>
     </div>

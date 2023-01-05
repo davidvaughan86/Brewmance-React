@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect, useState } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Main from "./components/Main";

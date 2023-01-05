@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const PORT = 7777;
 const cors = require("cors");
+const path = require("path");
 
 const whitelist = ["http://localhost:3000"];
 const corsOptions = {
@@ -16,10 +17,13 @@ const corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
+app.use(express.static(path.join(__dirname, "client", "build")));
 
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 app.get("/", (req, res) => {
   async function getRecipe() {
-    // document.getElementById("getRecipe").disabled = true;
     const response = await fetch(
       "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=coffee&number=15&ignorePantry=true&ranking=1",
       {

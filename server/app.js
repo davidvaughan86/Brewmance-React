@@ -19,10 +19,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.static(path.join(__dirname, "client", "build")));
 
-app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
-app.get("/", (req, res) => {
+// app.get("/*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "build", "index.html"));
+// });
+app.get("/recipes", (req, res) => {
   async function getRecipe() {
     const response = await fetch(
       "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?ingredients=coffee&number=15&ignorePantry=true&ranking=1",

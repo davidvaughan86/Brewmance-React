@@ -1,4 +1,4 @@
-This is my React version of Brewmance. We are 95% complete!
+![Brewmance](https://media.giphy.com/media/QRUEBHv4L8tpzGkGTP/giphy.gif)
 
 # What is Brewmance?
 
@@ -12,7 +12,7 @@ This is my React version of Brewmance. We are 95% complete!
 
 ## This is how I get started with apps and web pages.
 
-![miro](./public/images/miro.png)
+![miro](./client/public/miro.png)
 
 # Struggles
 
@@ -25,7 +25,11 @@ This is my React version of Brewmance. We are 95% complete!
   - I was getting stacks and doubles of my API call. Luckily this only happens in dev mode. I removed the restrict tags so I could avoid this in testing before pushing to prod.
 
 - Iterating through the array of data and posting the data 1 at a time while hiding the reamining data.
+
   - I wanted to use a useState here to and set the increment veriable to the index of the array of elements. I decided to just use my old code from the previous version so I could save time on the project.
+
+- Deployed using [Brewmance](http://brewmance.online) to Surge - struggles with fetching the API from an external source in prod
+  - returns HTML instead of json. This struggle is keeping from me using the app outside of project viewing.
 
 # Overall
 

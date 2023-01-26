@@ -28,8 +28,7 @@
 
   - I wanted to use a useState here to and set the increment veriable to the index of the array of elements. I decided to just use my old code from the previous version so I could save time on the project.
 
-- Deployed using [Brewmance](http://brewmance.online) to Surge - struggles with fetching the API from an external source in prod
-  - returns HTML instead of json. This struggle is keeping from me using the app outside of project viewing.
+- Deployed using Surge, [Brewmance](http://brewmance.online) 
 
 # Overall
 
